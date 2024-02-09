@@ -1,0 +1,771 @@
+/*
+    Theme Name: Knight
+    Theme URL: https://bootstrapmade.com/knight-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+*/
+
+/* CSS Document */
+
+/* Float Elements 
+---------------------------------*/
+.fl-lt {
+	float: left;
+}
+
+.fl-rt {
+	float: right;
+}
+
+/* Clear Floated Elements
+---------------------------------*/
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:before,
+.clearfix:after {
+	content: '\0020';
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+img {
+	max-width: 80%;
+}
+
+a,
+a:hover,
+a:active {
+	outline: 0px !important
+}
+
+
+@font-face {
+	font-family: "Title";
+	src: url("../fonts/nevis.eot");
+	/* IE9 Compat Modes */
+	src: url("../fonts/nevis.woff2") format("woff2"),
+		/* Modern Browsers */
+		url("../fonts/nevis.woff") format("woff"),
+		/* Modern Browsers */
+		url("../fonts/nevis.svg") format("svg"),
+		/* Legacy iOS */
+		url("../fonts/nevis.ttf") format("truetype"),
+		/* Safari, Android, iOS */
+		url("../fonts/nevis.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/nevis.otf") format("opentype");
+	/* Open Type Font */
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.1.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.1.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.1.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.1.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.1.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Primary Styles
+---------------------------------*/
+body {
+	background: rgb(10, 10, 10);
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #888888;
+	margin: 0;
+}
+
+h2 {
+	font-size: 34px;
+	color: #ffffff;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 3px;
+	margin: 0 0 15px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-family: 'Title', sans-serif;
+	color: #ffffff;
+	letter-spacing: 2px;
+	font-size: 16px;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	color: #ffffff;
+	font-size: 30px;
+	text-align: center;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-family: 'Title', sans-serif;
+	font-size: 50px;
+	letter-spacing: 1px;
+	margin: 0 0 0 0;
+	text-align: center;
+	color: rgb(255, 255, 255);
+}
+
+h6 {
+	font-size: 30px;
+	color: #888888;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	text-align: center;
+	margin: 0 0 60px 0;
+}
+
+tt {
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	color: #0a0a0a;
+	font-size: 20px;
+	text-align: center;
+	margin: 0 0 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 15px;
+	color: #000000;
+	font-family: 'Title', sans-serif;
+	margin: 0;
+	line-height: 24px;
+}
+
+/* Header Styles
+---------------------------------*/
+
+.header {
+	text-align: center;
+	padding: 200px 0;
+	background-color: #111;
+}
+
+.logo {
+	width: 600px;
+	margin: 0 auto 35px;
+}
+
+.header h1 {
+	font-family: 'Title', sans-serif;
+	font-size: 90px;
+	text-align: center;
+	letter-spacing: 3px;
+	margin: 0 0 22px 0;
+	color: #fff;
+}
+
+.we-create {
+	padding: 0;
+	margin: 35px 0 55px;
+}
+
+.wp-pic {
+	margin-bottom: 20px;
+}
+
+.we-create li {
+	display: inline-block;
+	font-family: 'Title', sans-serif;
+	font-size: 14px;
+	color: #bcbcbc;
+	text-transform: uppercase;
+	margin: 0 5px 0 0;
+	padding: 0 0 0 15px;
+}
+
+.we-create li:first-child {
+	background: none;
+}
+
+.start-button {
+	padding-left: 0px;
+}
+
+.start-button li a {
+	color: #fff;
+}
+
+
+.link {
+	padding: 15px 35px;
+	background: linear-gradient(#ff0000, #ff6600);
+	color: #fff !important;
+	font-size: 20px;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.link:hover {
+	text-decoration: none;
+	color: #ff0138 !important;
+	background: #fff;
+}
+
+.link:active,
+.link:focus {
+	background: linear-gradient(#ff0000, #ff6600);
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.link-youtube {
+	padding: 15px 35px;
+	background: linear-gradient(#ff0037, #ff0055);
+	color: #fff !important;
+	font-size: 20px;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.link-youtube:hover {
+	text-decoration: none;
+	color: #ff012b !important;
+	background: #fff;
+}
+
+.link-youtube:active,
+.link-youtube:focus {
+	background: linear-gradient(#ff0037, #ff0055);
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.link-discord {
+	padding: 15px 35px;
+	background: linear-gradient(#4854f5, #4c00ff);
+	color: #fff !important;
+	font-size: 20px;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.link-discord:hover {
+	text-decoration: none;
+	color: #6442fc !important;
+	background: #fff;
+}
+
+.link-discord:active,
+.link-discord:focus {
+	background: linear-gradient(#4854f5, #4c00ff);
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.link-github {
+	padding: 15px 35px;
+	background: linear-gradient(#000000, #313131);
+	color: #fff !important;
+	font-size: 20px;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.link-github:hover {
+	text-decoration: none;
+	color: #000000 !important;
+	background: #fff;
+}
+
+.link-github:active,
+.link-github:focus {
+	background: linear-gradient(#000000,
+			#313131);
+	text-decoration: none;
+	color: #fff !important;
+}
+
+.link-raiden {
+	padding: 15px 35px;
+	background: linear-gradient(#ff0800, #ff6600);
+	color: #fff !important;
+	font-size: 20px;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	display: inline-block;
+	border-radius: 9px;
+	text-transform: uppercase;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-right: 8px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.link-raiden:hover {
+	text-decoration: none;
+	color: #ff3300 !important;
+	background: #fff;
+}
+
+.link-raiden:active,
+.link-raiden:focus {
+	background: linear-gradient(#ff0000, #ff8800);
+	text-decoration: none;
+	color: #fff !important;
+}
+
+/* Navigation
+---------------------------------*/
+.main-nav-outer {
+	padding: 0px;
+	/* border-bottom: 1px solid #dddddd; */
+	/* box-shadow: 0 4px 5px -3px #ececec; */
+	position: relative;
+	background: linear-gradient(#ff0000, #ff6600)
+}
+
+.main-nav {
+	text-align: center;
+	margin: 10px 0 0px;
+	padding: 0;
+	list-style: none;
+}
+
+.main-nav li {
+	display: inline;
+	margin: 0 1px;
+}
+
+.main-nav li a {
+	display: inline-block;
+	color: #030303;
+	text-transform: uppercase;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	text-decoration: none;
+	line-height: 20px;
+	margin: 17px 32px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.main-nav li a:hover {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.small-logo {
+	padding: 0 30px;
+}
+
+.main-section {
+	padding: 90px 0 110px;
+}
+
+
+/* Services
+---------------------------------*/
+
+.service-list {
+	padding: 0 0 0 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+	margin-bottom: 40px;
+}
+
+.service-list-col1 {
+	float: left;
+	width: 60px;
+}
+
+.service-list-col1 i {
+	font-style: normal;
+	font-size: 38px;
+	display: block;
+	color: rgb(255, 254, 254);
+	font-family: 'Title';
+	letter-spacing: 2px;
+	line-height: 38px;
+}
+
+.service-list-col2 {
+	overflow: hidden;
+}
+
+.main-section.alabaster {
+	background: white
+}
+
+
+/* Portfolio
+---------------------------------*/
+.Portfolio-nav {
+	padding: 0;
+	margin: 0 0 45px 0;
+	list-style: none;
+	text-align: center;
+}
+
+.Portfolio-nav li {
+	margin: 0 10px;
+	display: inline;
+}
+
+.Portfolio-nav li a {
+	display: inline-block;
+	padding: 10px 22px;
+	font-size: 12px;
+	line-height: 20px;
+	color: #1f1f1f;
+	border-radius: 4px;
+	text-transform: uppercase;
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	background: #f7f7f7;
+	margin-bottom: 5px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.Portfolio-nav li a:hover {
+	background: linear-gradient(#000000, #000000);
+	color: #fff;
+	text-decoration: none;
+}
+
+.portfolioContainer {
+	margin: 0 auto;
+	padding-left: 15px;
+}
+
+.Portfolio-box {
+	text-align: center;
+	margin-bottom: 30px;
+	height: 350px;
+	width: 350px;
+	overflow: hidden;
+	float: left;
+	padding: 0;
+}
+
+.Portfolio-box img {
+	margin-bottom: 25px;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.Portfolio-box img:hover {
+	opacity: 0.6;
+}
+
+.Portfolio-nav li a.current {
+	background: linear-gradient(#ff0000, #ff7300);
+	color: #fff;
+	text-decoration: none;
+}
+
+img {
+	max-width: 80%;
+}
+
+/* no transition on .isotope container */
+
+.isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.6s;
+	-moz-transition-duration: 0.6s;
+	transition-duration: 0.6s;
+}
+
+.isotope .isotope-item {
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+
+.main-section.paddind {
+	padding-bottom: 60px;
+}
+
+.business-talking {
+	background: linear-gradient(#ff0000, #ff7300);
+	background-size: cover;
+	padding: 60px 0 10px;
+	text-align: center;
+}
+
+.business-talking h2 {
+	font-family: 'Title', sans-serif;
+	letter-spacing: 2px;
+	padding: 0;
+	margin: 20px 0 70px;
+	text-transform: uppercase;
+	font-size: 42px;
+	color: #fff;
+}
+
+
+/* Contact
+---------------------------------*/
+.main-section.contact {
+	padding: 90px 0 100px;
+}
+
+.main-section.contact {
+	background: url(../img/bg-map.png) left 190px no-repeat;
+}
+
+.contact-info-box {
+	font-size: 15px;
+	margin: 0 0 14px 68px;
+	padding-left: 0;
+}
+
+.contact-info-box h3 {
+	font-size: 15px;
+	float: left;
+	width: 102px;
+	margin-right: 12px;
+	line-height: 28px;
+}
+
+.contact-info-box h3 i {
+	font-style: normal;
+	font-size: 18px;
+	color: #222222;
+	font-family: 'FontAwesome';
+	font-weight: normal;
+	margin-right: 7px;
+}
+
+.contact-info-box span {
+	line-height: 28px;
+	display: block;
+	overflow: hidden;
+}
+
+.social-link {
+	padding: 0;
+	margin: 0 0 0 440px;
+	display: block;
+	overflow: hidden;
+	list-style: none;
+}
+
+.social-link li {
+	float: left;
+	text-align: center;
+	margin-right: 8px;
+}
+
+.social-link li a {
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	font-size: 25px;
+	color: #fff;
+	background: #222222;
+	border-radius: 10%;
+	transition: all 0.3s ease-in-out;
+}
+
+.social-link li a:hover,
+.social-link li a:focus {
+	text-decoration: none;
+}
+
+.youtube a:hover {
+	background: #ff0000;
+}
+
+.github a:hover {
+	background: #141414;
+}
+
+.discord a:hover {
+	background: #5630ff;
+}
+
+.raiden a:hover {
+	background: #f01c2d;
+}
+
+.form {
+	margin: 0 66px 0 30px;
+}
+
+
+/* Footer
+---------------------------------*/
+
+.footer {
+	background: linear-gradient(#ff0000, #ff5100);
+	padding: 35px 0 35px;
+	text-align: center;
+	font-family: "Title";
+}
+
+.footer-logo {
+	margin: 25px auto 35px;
+	width: 200px;
+}
+
+.copyright,
+.credits {
+	color: #cccccc;
+	font-size: 14px;
+	display: block;
+	text-align: center;
+}
+
+.copyright a,
+.credits a {
+	color: #c57676;
+	font-weight: 600;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.copyright a:hover,
+.credits a:hover {
+	color: #fff;
+}
+
+.res-nav_click {
+	line-height: 38px;
+	font-family: 'FontAwesome';
+	font-size: 38px;
+	text-decoration: none !important;
+	color: #ffffff;
+	font-style: normal;
+	display: none;
+	width: 42px;
+	height: 27px;
+	margin: 20px auto;
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
+.res-nav_click:hover,
+.res-nav_click:active,
+.res-nav_click:focus {
+	color: #000000 !important;
+}
+
+.portfolioContainer {
+	max-width: 1140px;
+}
+
+
+/* Animation Timers
+---------------------------------*/
+.delay-02s {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+.delay-03s {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+.delay-04s {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+.delay-05s {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+.delay-06s {
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+}
+
+.delay-07s {
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+}
+
+.delay-08s {
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
+
+.delay-09s {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+
+.delay-1s {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+
+.delay-12s {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
